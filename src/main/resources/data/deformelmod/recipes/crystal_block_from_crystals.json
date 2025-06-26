@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+"pattern": [
+  "###",
+  "###",
+  "###"
+],
+  "key": {
+    "#": {
+      "item": "deformelmod:crystal"
+    }
+  },
+  "result": {
+    "item": "deformelmod:crystal_block"
+  }
+}

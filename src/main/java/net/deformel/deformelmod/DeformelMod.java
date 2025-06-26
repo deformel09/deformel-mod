@@ -1,5 +1,13 @@
 package net.deformel.deformelmod;
+
 import com.mojang.logging.LogUtils;
+import jdk.jfr.Category;
+import net.deformel.deformelmod.block.ModBlocks;
+import net.deformel.deformelmod.item.ModCreativeModTabs;
+import net.deformel.deformelmod.item.ModItems;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -10,8 +18,10 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
-// Значение здесь должно соответствовать записи в файле META-INF/mods.toml
+
+
 @Mod(DeformelMod.MOD_ID)
 public class DeformelMod {
     // Укажите идентификатор мода в общем месте, чтобы на него можно было ссылаться
@@ -22,6 +32,12 @@ public class DeformelMod {
     public DeformelMod(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
+
+        ModCreativeModTabs.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -37,6 +53,9 @@ public class DeformelMod {
 
     // Добавить предмет примера блока во вкладку строительных блоков
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.CRYSTAL);
+        }
     }
 
     // Вы можете использовать SubscribeEvent и позволить шине событий обнаруживать методы для вызова

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 2.0,
+  "group": "crystal",
+  "ingredient": {
+    "item": "deformelmod:crystal_ore"
+  },
+  "result": "deformelmod:crystal"
+}
