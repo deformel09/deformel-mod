@@ -23,6 +23,7 @@ public class ModCreativeModTabs {
                 pOutput.accept(ModItems.CRYSTAL.get());
                 pOutput.accept(ModBlocks.CRYSTAL_BLOCK.get());
                 pOutput.accept(ModBlocks.CRYSTAL_ORE.get());
+                pOutput.accept(ModItems.METAL_DETECTOR.get());
 
 
             })
