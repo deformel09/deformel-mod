@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "deformelmod:block/sound_block"
+    }
+  }
+}

@@ -1,6 +1,7 @@
 package net.deformel.deformelmod.block;
 
 import net.deformel.deformelmod.DeformelMod;
+import net.deformel.deformelmod.block.custom.SoundBlock;
 import net.deformel.deformelmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -23,6 +24,8 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> CRYSTAL_ORE = registrBlock("crystal_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> SOUND_BLOCK = registrBlock("sound_block",
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).sound(SoundType.WOOD)));
 
     private static <T extends Block> RegistryObject<T> registrBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

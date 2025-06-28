@@ -1,10 +1,15 @@
 {
   "item.deformelmod.crystal": "Crystal",
   "item.deformelmod.metal_detector": "Metal Detector",
+  "item.deformelmod.strawberry": "Strawberry",
+  "item.deformelmod.pine_cone": "Pine cone",
 
   "creativetab.deformel_tab": "Deformel Mod Tab",
 
   "block.deformelmod.crystal_block": "Crystal block",
-  "block.deformelmod.crystal_ore": "Crystal ore"
+  "block.deformelmod.crystal_ore": "Crystal ore",
+  "block.deformelmod.sound_block": "Sound block",
+
+  "tooltip.deformelmod.metal_detector.tooltip": "Finds valuables underground"
 
 }
