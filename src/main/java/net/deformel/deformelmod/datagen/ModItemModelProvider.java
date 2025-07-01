@@ -1,6 +1,7 @@
 package net.deformel.deformelmod.datagen;
 
 import net.deformel.deformelmod.DeformelMod;
+import net.deformel.deformelmod.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -16,7 +17,11 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        simpleItem(ModItems.CRYSTAL);
 
+        simpleItem(ModItems.METAL_DETECTOR);
+        simpleItem(ModItems.STRAWBERRY);
+        simpleItem(ModItems.PINE_CONE);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item){
