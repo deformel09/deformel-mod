@@ -12,7 +12,9 @@ out
 *.iws
 *.iml
 .idea
+
 /src/generated/
+run-data
 
 # gradle
 build

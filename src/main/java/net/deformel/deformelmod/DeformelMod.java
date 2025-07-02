@@ -49,6 +49,7 @@ public class DeformelMod {
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
+
     }
 
     // Добавить предмет примера блока во вкладку строительных блоков
