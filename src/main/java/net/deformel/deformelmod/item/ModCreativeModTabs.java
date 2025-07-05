@@ -26,6 +26,7 @@ public class ModCreativeModTabs {
                 pOutput.accept(ModItems.METAL_DETECTOR.get());
                 pOutput.accept(ModItems.STRAWBERRY.get());
                 pOutput.accept(ModItems.PINE_CONE.get());
+                pOutput.accept(ModItems.CRYSTAL_STAFF.get());
                 pOutput.accept(ModBlocks.SOUND_BLOCK.get());
 
                 pOutput.accept(ModBlocks.CRYSTAL_DOOR.get());
@@ -37,6 +38,7 @@ public class ModCreativeModTabs {
                 pOutput.accept(ModBlocks.CRYSTAL_WALL.get());
                 pOutput.accept(ModBlocks.CRYSTAL_BUTTON.get());
                 pOutput.accept(ModBlocks.CRYSTAL_FENCE.get());
+
 
 
             })

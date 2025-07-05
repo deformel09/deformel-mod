@@ -3,6 +3,7 @@ package net.deformel.deformelmod;
 import com.mojang.logging.LogUtils;
 import jdk.jfr.Category;
 import net.deformel.deformelmod.block.ModBlocks;
+import net.deformel.deformelmod.entity.ModEntities;
 import net.deformel.deformelmod.item.ModCreativeModTabs;
 import net.deformel.deformelmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
@@ -31,6 +32,7 @@ public class DeformelMod {
 
     public DeformelMod(FMLJavaModLoadingContext context)
     {
+
         IEventBus modEventBus = context.getModEventBus();
 
         ModCreativeModTabs.register(modEventBus);
@@ -38,6 +40,8 @@ public class DeformelMod {
         ModBlocks.register(modEventBus);
 
         ModItems.register(modEventBus);
+
+        ModEntities.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

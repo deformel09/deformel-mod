@@ -6,6 +6,8 @@ import net.deformel.deformelmod.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.MinecartItem;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -44,6 +46,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("SSS")
                 .define('!', ModItems.CRYSTAL.get())
                 .define('S', ItemTags.PLANKS)
+                .unlockedBy(getHasName(ModItems.CRYSTAL.get()),has(ModItems.CRYSTAL.get())
+                ).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CRYSTAL_STAFF.get())
+                .pattern("  !")
+                .pattern(" S ")
+                .pattern("S  ")
+                .define('!', ModItems.CRYSTAL.get())
+                .define('S', Items.STICK)
                 .unlockedBy(getHasName(ModItems.CRYSTAL.get()),has(ModItems.CRYSTAL.get())
                 ).save(pWriter);
     }

@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "deformelmod:item/crystal_staff_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "deformelmod:item/crystal_staff_2d"
+    },
+    "ground": {
+      "parent": "deformelmod:item/crystal_staff_2d"
+    },
+    "fixed": {
+      "parent": "deformelmod:item/crystal_staff_2d"
+    }
+  }
+}

@@ -1,6 +1,7 @@
 package net.deformel.deformelmod.item;
 
 import net.deformel.deformelmod.DeformelMod;
+import net.deformel.deformelmod.item.custom.CrystalStaff;
 import net.deformel.deformelmod.item.custom.FuelItem;
 import net.deformel.deformelmod.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.Item;
@@ -18,6 +19,8 @@ public class ModItems {
             () -> new MetalDetectorItem(new Item.Properties().durability(100)));
     public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry",
             () -> new Item(new Item.Properties().food(ModFoods.STRAWBERRY)));
+    public static final RegistryObject<Item> CRYSTAL_STAFF = ITEMS.register("crystal_staff",
+            () -> new CrystalStaff(new Item.Properties().stacksTo(1).durability(32)));
     public static final RegistryObject<Item> PINE_CONE = ITEMS.register("pine_cone",
             () -> new FuelItem(new Item.Properties(), 400));
     public static void register(IEventBus eventBus){
