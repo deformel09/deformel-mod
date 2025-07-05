@@ -36,5 +36,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.SOUND_BLOCK.get()
 
                 );
+        this.tag(BlockTags.FENCES)
+                .add(ModBlocks.CRYSTAL_FENCE.get());
+        this.tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.CRYSTAL_FENCE_GATE.get());
+        this.tag(BlockTags.WALLS)
+                .add(ModBlocks.CRYSTAL_WALL.get());
     }
 }

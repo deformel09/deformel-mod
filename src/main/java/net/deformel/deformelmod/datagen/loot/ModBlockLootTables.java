@@ -29,6 +29,21 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.CRYSTAL_BLOCK.get());
         this.dropSelf(ModBlocks.SOUND_BLOCK.get());
 
+        this.dropSelf(ModBlocks.CRYSTAL_FENCE.get());
+        this.dropSelf(ModBlocks.CRYSTAL_BUTTON.get());
+        this.dropSelf(ModBlocks.CRYSTAL_STAIRS.get());
+        this.dropSelf(ModBlocks.CRYSTAL_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.CRYSTAL_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.CRYSTAL_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.CRYSTAL_WALL.get());
+
+        this.add(ModBlocks.CRYSTAL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.CRYSTAL_SLAB.get()));
+
+        this.add(ModBlocks.CRYSTAL_DOOR.get(),
+                block -> createDoorTable(ModBlocks.CRYSTAL_DOOR.get()));
+
+
         this.add(ModBlocks.CRYSTAL_ORE.get(),
                 block -> createRedstoneOreDrops(ModBlocks.CRYSTAL_ORE.get(), ModItems.CRYSTAL.get()));
     }

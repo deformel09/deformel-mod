@@ -28,6 +28,16 @@ public class ModCreativeModTabs {
                 pOutput.accept(ModItems.PINE_CONE.get());
                 pOutput.accept(ModBlocks.SOUND_BLOCK.get());
 
+                pOutput.accept(ModBlocks.CRYSTAL_DOOR.get());
+                pOutput.accept(ModBlocks.CRYSTAL_STAIRS.get());
+                pOutput.accept(ModBlocks.CRYSTAL_FENCE_GATE.get());
+                pOutput.accept(ModBlocks.CRYSTAL_TRAPDOOR.get());
+                pOutput.accept(ModBlocks.CRYSTAL_PRESSURE_PLATE.get());
+                pOutput.accept(ModBlocks.CRYSTAL_SLAB.get());
+                pOutput.accept(ModBlocks.CRYSTAL_WALL.get());
+                pOutput.accept(ModBlocks.CRYSTAL_BUTTON.get());
+                pOutput.accept(ModBlocks.CRYSTAL_FENCE.get());
+
 
             })
             .build());

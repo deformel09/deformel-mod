@@ -10,6 +10,16 @@
   "block.deformelmod.crystal_ore": "Crystal ore",
   "block.deformelmod.sound_block": "Sound block",
 
+  "block.deformelmod.crystal_stairs" : "Crystal Stairs",
+  "block.deformelmod.crystal_slab" : "Crystal Slab",
+  "block.deformelmod.crystal_button" : "Crystal Button",
+  "block.deformelmod.crystal_pressure_plate" : "Crystal Pressure Plate",
+  "block.deformelmod.crystal_fence" : "Crystal Fence",
+  "block.deformelmod.crystal_fence_gate" : "Crystal Fence Gate",
+  "block.deformelmod.crystal_crystal_wall" : "Crystal Wall",
+  "block.deformelmod.crystal_crystal_door" : "Crystal Door",
+  "block.deformelmod.crystal_crystal_trapdoor" : "Crystal Trapdoor",
+
   "tooltip.deformelmod.metal_detector.tooltip": "Finds valuables underground"
 
 }
