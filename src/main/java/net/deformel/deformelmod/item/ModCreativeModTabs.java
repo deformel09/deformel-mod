@@ -20,14 +20,23 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.CRYSTAL.get()))
             .title(Component.translatable("creativetab.deformel_tab"))
             .displayItems((pPatameters, pOutput) -> {
+
                 pOutput.accept(ModItems.CRYSTAL.get());
-                pOutput.accept(ModBlocks.CRYSTAL_BLOCK.get());
-                pOutput.accept(ModBlocks.CRYSTAL_ORE.get());
                 pOutput.accept(ModItems.METAL_DETECTOR.get());
                 pOutput.accept(ModItems.STRAWBERRY.get());
                 pOutput.accept(ModItems.PINE_CONE.get());
+
                 pOutput.accept(ModItems.CRYSTAL_STAFF.get());
+                pOutput.accept(ModItems.CRYSTAL_SWORD.get());
+                pOutput.accept(ModItems.CRYSTAL_SHOVEL.get());
+                pOutput.accept(ModItems.CRYSTAL_AXE.get());
+                pOutput.accept(ModItems.CRYSTAL_PICKAXE.get());
+                pOutput.accept(ModItems.CRYSTAL_HOE.get());
+
+
                 pOutput.accept(ModBlocks.SOUND_BLOCK.get());
+                pOutput.accept(ModBlocks.CRYSTAL_BLOCK.get());
+                pOutput.accept(ModBlocks.CRYSTAL_ORE.get());
 
                 pOutput.accept(ModBlocks.CRYSTAL_DOOR.get());
                 pOutput.accept(ModBlocks.CRYSTAL_STAIRS.get());

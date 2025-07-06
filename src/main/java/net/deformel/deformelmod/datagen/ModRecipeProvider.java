@@ -49,10 +49,55 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.CRYSTAL.get()),has(ModItems.CRYSTAL.get())
                 ).save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CRYSTAL_STAFF.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRYSTAL_STAFF.get())
                 .pattern("  !")
                 .pattern(" S ")
                 .pattern("S  ")
+                .define('!', ModItems.CRYSTAL.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.CRYSTAL.get()),has(ModItems.CRYSTAL.get())
+                ).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRYSTAL_AXE.get())
+                .pattern("!!")
+                .pattern("S!")
+                .pattern("S ")
+                .define('!', ModItems.CRYSTAL.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.CRYSTAL.get()),has(ModItems.CRYSTAL.get())
+                ).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRYSTAL_PICKAXE.get())
+                .pattern("!!!")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('!', ModItems.CRYSTAL.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.CRYSTAL.get()),has(ModItems.CRYSTAL.get())
+                ).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRYSTAL_SHOVEL.get())
+                .pattern("!")
+                .pattern("S")
+                .pattern("S")
+                .define('!', ModItems.CRYSTAL.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.CRYSTAL.get()),has(ModItems.CRYSTAL.get())
+                ).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRYSTAL_SWORD.get())
+                .pattern("!")
+                .pattern("!")
+                .pattern("S")
+                .define('!', ModItems.CRYSTAL.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.CRYSTAL.get()),has(ModItems.CRYSTAL.get())
+                ).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRYSTAL_HOE.get())
+                .pattern("!!")
+                .pattern("S ")
+                .pattern("S ")
                 .define('!', ModItems.CRYSTAL.get())
                 .define('S', Items.STICK)
                 .unlockedBy(getHasName(ModItems.CRYSTAL.get()),has(ModItems.CRYSTAL.get())

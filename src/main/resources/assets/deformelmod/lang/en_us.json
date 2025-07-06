@@ -5,6 +5,12 @@
   "item.deformelmod.pine_cone": "Pine cone",
   "item.deformelmod.crystal_staff": "Crystal Staff",
 
+  "item.deformelmod.crystal_sword": "Crystal Sword",
+  "item.deformelmod.crystal_pickaxe": "Crystal Pickaxe",
+  "item.deformelmod.crystal_axe": "Crystal Axe",
+  "item.deformelmod.crystal_shovel": "Crystal Shovel",
+  "item.deformelmod.crystal_hoe": "Crystal Hoe",
+
   "creativetab.deformel_tab": "Deformel Mod Tab",
 
   "block.deformelmod.crystal_block": "Crystal block",

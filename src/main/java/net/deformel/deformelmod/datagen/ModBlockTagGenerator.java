@@ -32,10 +32,13 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.CRYSTAL_BLOCK.get(),
-                        ModBlocks.CRYSTAL_ORE.get(),
-                        ModBlocks.SOUND_BLOCK.get()
+                        ModBlocks.CRYSTAL_ORE.get()
 
                 );
+
+        this.tag(ModTags.Blocks.NEEDS_CRYSTAL_TOOL)
+                .add(ModBlocks.SOUND_BLOCK.get());
+
         this.tag(BlockTags.FENCES)
                 .add(ModBlocks.CRYSTAL_FENCE.get());
         this.tag(BlockTags.FENCE_GATES)

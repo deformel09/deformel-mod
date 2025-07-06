@@ -39,6 +39,12 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         trapdoorItem(ModBlocks.CRYSTAL_TRAPDOOR);
 
+        handheldItem(ModItems.CRYSTAL_AXE);
+        handheldItem(ModItems.CRYSTAL_PICKAXE);
+        handheldItem(ModItems.CRYSTAL_SWORD);
+        handheldItem(ModItems.CRYSTAL_HOE);
+        handheldItem(ModItems.CRYSTAL_SHOVEL);
+
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item){
@@ -69,6 +75,12 @@ public class ModItemModelProvider extends ItemModelProvider {
     public void wallItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
                 .texture("wall", ResourceLocation.fromNamespaceAndPath(DeformelMod.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.withDefaultNamespace("item/handheld")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(DeformelMod.MOD_ID, "item/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder simpleBlockItem(RegistryObject<Block> item) {
