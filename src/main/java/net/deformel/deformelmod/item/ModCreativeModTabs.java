@@ -33,6 +33,11 @@ public class ModCreativeModTabs {
                 pOutput.accept(ModItems.CRYSTAL_PICKAXE.get());
                 pOutput.accept(ModItems.CRYSTAL_HOE.get());
 
+                pOutput.accept(ModItems.CRYSTAL_HELMET.get());
+                pOutput.accept(ModItems.CRYSTAL_CHESTPLATE.get());
+                pOutput.accept(ModItems.CRYSTAL_LEGGINGS.get());
+                pOutput.accept(ModItems.CRYSTAL_BOOTS.get());
+
 
                 pOutput.accept(ModBlocks.SOUND_BLOCK.get());
                 pOutput.accept(ModBlocks.CRYSTAL_BLOCK.get());
@@ -47,6 +52,7 @@ public class ModCreativeModTabs {
                 pOutput.accept(ModBlocks.CRYSTAL_WALL.get());
                 pOutput.accept(ModBlocks.CRYSTAL_BUTTON.get());
                 pOutput.accept(ModBlocks.CRYSTAL_FENCE.get());
+
 
 
 

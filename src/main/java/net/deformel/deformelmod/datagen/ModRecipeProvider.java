@@ -102,6 +102,33 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', Items.STICK)
                 .unlockedBy(getHasName(ModItems.CRYSTAL.get()),has(ModItems.CRYSTAL.get())
                 ).save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRYSTAL_HELMET.get())
+                .pattern("!!!")
+                .pattern("! !")
+                .define('!', ModItems.CRYSTAL.get())
+                .unlockedBy(getHasName(ModItems.CRYSTAL.get()),has(ModItems.CRYSTAL.get())
+                ).save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRYSTAL_CHESTPLATE.get())
+                .pattern("! !")
+                .pattern("!!!")
+                .pattern("!!!")
+                .define('!', ModItems.CRYSTAL.get())
+                .unlockedBy(getHasName(ModItems.CRYSTAL.get()),has(ModItems.CRYSTAL.get())
+                ).save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRYSTAL_LEGGINGS.get())
+                .pattern("!!!")
+                .pattern("! !")
+                .pattern("! !")
+                .define('!', ModItems.CRYSTAL.get())
+                .unlockedBy(getHasName(ModItems.CRYSTAL.get()),has(ModItems.CRYSTAL.get())
+                ).save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CRYSTAL_BOOTS.get())
+                .pattern("! !")
+                .pattern("! !")
+                .define('!', ModItems.CRYSTAL.get())
+                .unlockedBy(getHasName(ModItems.CRYSTAL.get()),has(ModItems.CRYSTAL.get())
+                ).save(pWriter);
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

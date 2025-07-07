@@ -11,6 +11,11 @@
   "item.deformelmod.crystal_shovel": "Crystal Shovel",
   "item.deformelmod.crystal_hoe": "Crystal Hoe",
 
+  "item.deformelmod.crystal_helmet": "Crystal Helmet",
+  "item.deformelmod.crystal_chestplate": "Crystal Chestplate",
+  "item.deformelmod.crystal_leggings": "Crystal Leggings",
+  "item.deformelmod.crystal_boots": "Crystal Boots",
+
   "creativetab.deformel_tab": "Deformel Mod Tab",
 
   "block.deformelmod.crystal_block": "Crystal block",
