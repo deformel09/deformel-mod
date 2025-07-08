@@ -6,6 +6,7 @@ import net.deformel.deformelmod.block.ModBlocks;
 import net.deformel.deformelmod.entity.ModEntities;
 import net.deformel.deformelmod.item.ModCreativeModTabs;
 import net.deformel.deformelmod.item.ModItems;
+import net.deformel.deformelmod.loot.ModLootModifiers;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -35,11 +36,13 @@ public class DeformelMod {
 
         IEventBus modEventBus = context.getModEventBus();
 
+        ModItems.register(modEventBus);
+
         ModCreativeModTabs.register(modEventBus);
 
-        ModBlocks.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
 
-        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         ModEntities.register(modEventBus);
 
